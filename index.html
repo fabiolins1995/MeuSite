@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Projeto</title>
+	<title>Fábio Lins</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,26 +10,21 @@
     
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="css/estiloprojeto.css" type="text/css">
-	<link rel="stylesheet" href="css/Squares.css" type="text/css">
-	<link rel="stylesheet" href="css/stars.css" type="text/css">
-
+	<link rel="stylesheet" href="css/mainStyles.css" type="text/css">
+	<link rel="stylesheet" href="css/squaresAnimation.css" type="text/css">
+	<link rel="stylesheet" href="css/starsAnimation.css" type="text/css">
 
 </head>
-
 		<body id="home">
 			<header><!-- inicio Cabecalho -->
 				<nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente ">
 				  <div class="container">
-					
 					<a href="#home" class="navbar-brand">
 					  <img class="animated fadeInLeft" src="imagens/logo.png" width="80%">
 					</a>
-		  
 					<button class="navbar-toggler " data-toggle="collapse" data-target="#nav-principal">
 					  <i class="fas fa-bars text-white"></i>
 					</button>
-		  
 					<div class="collapse navbar-collapse" id="nav-principal">
 					  <ul class="navbar-nav ml-auto animated fadeInLeft">
 						<li class="#nav-item">
@@ -46,17 +41,14 @@
 						</li>
 					  </ul>
 					</div>
-		  
 				  </div>
 				</nav>
 			  </header><!--/fim Cabecalho -->
 			
 			<div><!--imagem grande 1-->
-				<canvas id="canvas" class="caixa1"></canvas>
+				<canvas id="stars"></canvas>
 				<div class="conteudo-titulo">
-						<span class="titulo animated fadeIn delay-1s" >
-							Olá. Me chamo Fábio Lins. Sou Desenvolvedor Front-End
-						</span>
+					<span class="titulo" id="estrelas">EXPLORE</span>
 				</div>
 			</div><!--fim imagem grande 1-->
 
@@ -121,8 +113,6 @@
 			<div class="caixa3"><!--imagem grande 3-->
 				<div class="context">
 				</div>
-			
-			
 			<div class="area" >
 						<ul class="circles">
 								<li></li>
@@ -176,55 +166,39 @@
 					  </div>
 					</div>
 				  </section><!--fim nossos servicos-->
-			  
-	
-			<div class="caixa4"><!--imagem grande 4-->
-				<canvas id="stars"></canvas>
-				<div class="conteudo-titulo">
-					<span class="titulo" id="montanhas">Explore</span>
-				</div>
-			</div>
-			<div><!--fim imagem grande 4-->
-					<section id="trabalheconossco" class="caixa"><!--trabalhe conosco-->
-							<div class="container">
-							  <div class="row">
-								<div class="col-md-12">
-								  
-								  <h2 id="trabalheconosco">Trabalhe conosco</h2>
 
-								</div>
-								<form>
-										<div class="form-row">
-											<div class="form-group col-md-4">
-												<label for="nometrabalho">Nome</label>
-												<input type="text" class="form-control" id="nometrabalho" placeholder="Nome">
-											</div>
-											<div class="form-group col-md-4">
-												<label for="emailtrabalho">Email</label>
-												<input type="email" class="form-control" id="emailtrabalho" placeholder="Email">
-											</div>
-											<div class="form-group col-md-4">
-												<label for="areainteresse">Área de interesse</label>
-												<select class="form-control" name="" id="">
-													<option value="Desenvolvimento Web">Desenvolvimento web</option>
-													<option value="Gerenciamento De Software">Gerenciamento de software</option>
-													<option value="Suporte">Suporte</option>
-													<option value="Gerenciamento De Projetos">Gerenciamento de projetos</option>
-													<option value="Banco De Dados">Banco de dados</option>
-													<option value="Integração De Sistemas">Integração de sistemas</option>
-												</select>
-											</div>
+			<div class="caixa4"><!--imagem grande 4-->
+				<canvas id="canvas" class="caixa1"></canvas>
+				<div class="conteudo-titulo">
+						<span class="titulo animated fadeIn delay-1s" >
+							
+						</span>
+				</div>
+			</div><!--fim imagem grande 4-->
+			<div>
+				<section id="contato" class="caixa"><!--trabalhe conosco-->
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+							<h2>Contato</h2>
+							</div>
+							<form action="mailto:fabio.orlandini@yahoo.com.br" method="post" enctype="text/plain" id="enviar">
+								<div class="col-md-12">
+										<div class="form-group col-md-8">
+											<input type="text" class="form-control" id="nomeCliente" placeholder="Nome">
 										</div>
-										<button type="submit" class="btn btn-dark">Enviar</button>
-								</form>
-						  </section><!--fim trabalhe conosco-->
-						  	
-			</div>
-			<div class="caixa5"><!--imagem grande 5-->
-					<div class="conteudo-titulo">
-						<span class="titulo" id="montanhas">E divirta-se</span>
+										<div class="form-group col-md-8">
+											<input type="email" class="form-control" id="emailCliente" placeholder="Email">
+										</div>
+										<div class="form-group col-md-8">
+											<textarea type="message" class="form-control" id="message" placeholder="mensagem"></textarea>
+										</div>
+									<button type="submit" value="Enviar" id="btn" class="btn btn-dark">Enviar</button>
+								</div>
+							</form>
+						</div>
 					</div>
-				</div><!--fim imagem 5-->
+				</section><!--fim trabalhe conosco-->	
 
 			 <footer><!--menu rodape-->
 				<div class="container">
@@ -240,13 +214,16 @@
 					<div class="col-md-4">
 					  <ul>
 						<li>
-						  <a href="https://www.facebook.com"><img src="imagens/facebook.png"></a>
+						  <a href="https://api.whatsapp.com/send?phone=5521998761128">
+							<img style="background-color: white; border-radius: 20%; width: 54px; height: 54px;" src="imagens/wpp.png"></a>
 						</li>
 						<li>
-						  <a href="https://twitter.com/login?lang=pt"><img src="imagens/twitter.png"></a>
+						  <a href="https://github.com/fabiolins1995">
+							<img style="background-color: white; border-radius: 20%; width: 54px; height: 54px;" src="imagens/github.png"></a>
 						</li>
-						<li>
-						  <a href="https://www.instagram.com/?hl=pt-br"><img src="imagens/instagram.png"></a>
+						<li >
+						  <a href="https://www.linkedin.com/in/fabiolins1995/">
+							<img style="background-color: white; border-radius: 20%; width: 54px; height: 54px;" src="imagens/linkedin.png"></a>
 						</li>
 					  </ul>
 					</div>
@@ -260,8 +237,7 @@
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 				<script src="js/forestScript.js"></script> 
-				<script src="js/stars.js"></script> 
-
+				<script src="js/starsScript.js"></script> 
 				<!--=========================================================================================================-->
 		</body>
 </html>
