@@ -31,14 +31,6 @@ p {
   margin-bottom: 20px;
 }
 
-#wpp {
-  color: #06d755;
-  font-size: 60px;
-  position: fixed;
-  left: 35px;
-  bottom: 30px;
-}
-
 /* Efeito Parallax
 		-------------------------------*/
 .caixa1,
@@ -56,21 +48,6 @@ p {
 
 .caixa1 {
   background-image: url("https://external-preview.redd.it/Tf2MC-orVRAI8OL5tjyF4k4H2Q6QLHTWllekGfqdt3c.png?width=960&crop=smart&auto=webp&s=be4ab9a2fa3ca2f7011799377f118a8dbc64aacb");
-}
-
-.caixa2 {
-  background-image: url(../imagens/imagem2.jpg);
-}
-
-.caixa3 {
-  background-image: url(../imagens/imagem3.jpg);
-}
-
-.caixa4 {
-  background-image: url(../imagens/imagem4.jpg);
-}
-.caixa5 {
-  background-image: url(../imagens/imagem5.jpg);
 }
 
 .conteudo-titulo {
@@ -213,41 +190,11 @@ section.equipe h2 {
   padding-bottom: 20px;
 }
 
-#servicos {
-  background: white;
-  color: #000;
-}
-#quemsomos {
-  color: #000;
-  font-size: 20px;
-}
-
-#servicos h2 {
-  color: #000;
-}
-.btn-dark {
-  /*botao do nossos serviços*/
-
-  box-shadow: 8px 7px 5px -3px rgba(20, 20, 20, 0.6);
-  font-size: 20px;
-} /*botao do nossos serviços*/
-
 .col-lg-6 {
   box-shadow: 8px 7px 5px -3px rgba(20, 20, 20, 0.6);
   border: 1px ridge;
   color: #000;
   font-size: 18px;
-}
-
-.albuns {
-  padding: 10px 0;
-}
-#trabalheconosco {
-  background: white;
-  color: #000;
-}
-label {
-  color: #000;
 }
 
 /* Rodapé
